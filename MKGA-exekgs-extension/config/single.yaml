@@ -1,0 +1,22 @@
+defaults:
+  - dataload: dataload
+  - aug_method: methods
+  - aug_approach: approach
+  - embed: embed
+  - evaluate: evaluate
+  - _self_
+
+file_paths:
+  preprocessed: data/preprocessed
+  embedded: data/embedded
+  predicted: data/predicted
+
+pipeline:
+  dataload: amplus
+  augment: propConst_LOF_del_numbers
+  embed: RDF2Vec
+  evaluate: 
+    - SVM
+    - KNN
+
+

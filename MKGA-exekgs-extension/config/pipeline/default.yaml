@@ -1,0 +1,6 @@
+dataload: dmg777k
+augment: bin_3
+embed: ComplEx
+evaluate: 
+  - SVM
+  - KNN

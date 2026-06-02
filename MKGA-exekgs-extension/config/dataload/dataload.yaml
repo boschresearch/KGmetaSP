@@ -1,0 +1,24 @@
+amplus:
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?
+dmgfull:
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?
+mdgenre:
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?
+dmg777k: 
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?
+exekgs: 
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?
+exekgs_with_mlseakg: 
+  use_final_distribution : True # get train test split instead of train valid split?
+  use_torch : True #use torch?
+  prune_dist :  #reduce the number of triples to an n-hop neighborhood around the labeled nodes?

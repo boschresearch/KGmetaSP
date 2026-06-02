@@ -1,0 +1,112 @@
+# Baseline approaches
+InAll:
+  - simplistic_approach
+ExAll:
+  - delete_all_literals
+InNumbers:
+   - delete_all_but_numbers
+InDates:
+  - delete_all_but_dates
+InText:
+  - delete_all_but_text
+InImages:
+  - delete_all_but_images
+ExNumbers:
+  - delete_number_literals
+ExDates:
+  - delete_date_literals
+ExText:
+  - delete_text_literals
+ExImages:
+  - delete_image_literals
+OneEntPerRel:
+   - one_entity
+
+5_bins:
+  - bin_numbers_5
+  - delete_all_literals
+10_bins:
+  - bin_numbers_10
+  - delete_all_literals
+100_bins:
+  - bin_numbers_100
+  - delete_all_literals
+
+5_lof_bins:
+  - bin_numbers_lof_5
+  - delete_all_literals
+10_lof_bins:
+  - bin_numbers_lof_10
+  - delete_all_literals
+100_lof_bins:
+  - bin_numbers_lof_100
+  - delete_all_literals
+
+1_pct_bins:
+  - bin_numbers_percentage_1
+  - delete_all_literals
+5_pct_bins:
+  - bin_numbers_percentage_5
+  - delete_all_literals
+10_pct_bins:
+  - bin_numbers_percentage_10
+  - delete_all_literals
+
+5lvl_binary_hierarchy:
+  - bin_numbers_hierarchically_5lvl_binary
+  - delete_all_literals
+5_10_100_hierarchy: 
+  - bin_numbers_hierarchically_5_10_100
+  - delete_all_literals
+
+10_overlapping:
+  - alternating_bins_10
+  - delete_all_literals
+100_overlapping:
+  - alternating_bins_100
+  - delete_all_literals
+
+propConst:
+  - rel_bound_subpopulation
+  - delete_all_literals
+propConst_LOF:
+  - rel_bound_LOF_subpopulation
+  - delete_all_literals
+propValConst:
+  - rel_val_bound_subpopulation
+  - delete_all_literals
+propValConst_LOF:
+  - rel_val_bound_LOF_subpopulation
+  - delete_all_literals
+
+date_features:
+  - append_date_features
+  - delete_all_literals
+date_binning:
+  - bin_dates
+  - delete_all_literals
+
+LDA_topics:
+  - LDA_topic_assignment
+  - delete_all_literals
+  
+VGG_classes:
+  - VGG_image_classification
+  - delete_all_literals
+
+MKGA:
+  - rel_bound_LOF_subpopulation
+  - LDA_topic_assignment
+  - VGG_image_classification
+  - delete_image_literals
+
+propConst_LOF_del_numbers:
+  - rel_bound_LOF_subpopulation
+  - delete_number_literals
+
+
+
+test1:
+  - delete_all_literals
+test2:
+  - delete_all_literals

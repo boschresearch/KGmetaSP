@@ -1,0 +1,36 @@
+# Copyright (c) 2026 Robert Bosch GmbH
+# SPDX-License-Identifier: AGPL-3.0
+
+[tool.poetry]
+name = "dataset-similarity"
+version = "0.0.0"
+description = ""
+authors = ["Antonis Klironomos <antonisklironomos@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kge_experiments"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+pykeen = { git = "https://github.com/boschresearch/ReaLitE", branch = "main", subdirectory = "pykeen-with-realite" }
+typer = "^0.12.5"
+click = "8.1.7"
+openai = "^1.51.0"
+rdflib = ">=7.1.4,<8.0.0"
+matplotlib = "^3.9.2"
+openml = "^0.15.0"
+gensim = "^4.3.3"
+igraph = "^0.11.8"
+seaborn = "^0.13.2"
+sparqlwrapper = "^2.0.0"
+hydra-core = "^1.3.2"
+nltk = "^3.9.1"
+exe-kg-lib = "^2.2.3"
+torch = "2.4.1"
+setuptools = "<82"
+kgbench = {git = "https://github.com/pbloem/kgbench-loader.git", rev = "320e614c6df0fee0ab8806b40b1770b7fa1f4ca8"}
+class-resolver = "0.5.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

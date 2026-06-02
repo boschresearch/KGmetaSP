@@ -1,0 +1,121 @@
+# BASELINE
+simplistic_approach:
+  classify: 1
+delete_all_literals:
+  neighborhood: 1
+
+delete_all_but_numbers:
+  neighborhood: 1
+delete_all_but_dates:
+  neighborhood: 1
+delete_all_but_text:
+  neighborhood: 1
+delete_all_but_images:
+  neighborhood: 1
+
+delete_number_literals:
+  neighborhood: 1
+delete_date_literals:
+  neighborhood: 1
+delete_text_literals:
+  neighborhood: 1
+delete_image_literals:
+  neighborhood: 1
+
+# Number Processing
+bin_numbers_5:
+  num_bins: 5
+bin_numbers_10:
+  num_bins: 10
+bin_numbers_100:
+  num_bins: 100
+
+bin_numbers_lof_5:
+  num_bins: 5
+bin_numbers_lof_10:
+  num_bins: 10
+bin_numbers_lof_100:
+  num_bins: 100
+
+bin_numbers_percentage_1:
+  num_bins: 1
+bin_numbers_percentage_5:
+  num_bins: 5
+bin_numbers_percentage_10:
+  num_bins: 10
+
+bin_numbers_hierarchically_5lvl_binary:
+  list_num_bins:
+    - 1
+    - 2
+    - 5
+    - 8
+    - 16
+bin_numbers_hierarchically_5_10_100:
+  list_num_bins:
+    - 5
+    - 10
+    - 100
+
+alternating_bins_10:
+  num_bins: 10
+alternating_bins_100:
+  num_bins: 100
+
+
+append_date_features:
+  neighborhood: 1
+bin_dates:
+  num_bins: 100
+
+LDA_topic_assignment:
+  num_topics: 10
+  min_mean_word_count: 3
+
+VGG_image_classification:
+  num_classes: 1
+
+rel_bound_subpopulation:
+  num_bins: 10
+rel_val_bound_subpopulation:
+  num_bins: 10
+rel_bound_LOF_subpopulation:
+  num_bins: 10
+rel_val_bound_LOF_subpopulation:
+  num_bins: 10
+  
+# # do_nothing:
+# #   nothingness: true
+
+
+# delete_none_literals:
+#   neighborhood: 1
+# delete_geo_literals:
+#   neighborhood: 1
+
+one_entity:
+  num_bins: 1
+
+# bin_numbers_hierarchically_3_10_100:
+#   list_num_bins:
+#     - 3
+#     - 10
+#     - 100
+# altering_bins:
+#   num_bins: 10
+
+# subpopulation_binning:
+#   num_bins: 10
+# subpopulation_binning_lof_100:
+#   num_bins: 100
+# subpopulation_binning_lof_10:
+#   num_bins: 10
+# subpopulation_binning_10:
+#   num_bins: 10
+# bound_subpopulation_binning_lof_10:
+#   num_bins: 10
+# bound_subpopulation_binning_lof_100:
+#   num_bins: 10
+# bound_subpopulation_binning_10:
+#   num_bins: 10
+

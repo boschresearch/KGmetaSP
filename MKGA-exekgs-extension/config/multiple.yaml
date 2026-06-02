@@ -1,0 +1,73 @@
+defaults:
+  - dataload: dataload
+  - aug_method: methods
+  - aug_approach: approach
+  - embed: embed
+  - evaluate: evaluate
+  - pipeline: default
+  - _self_
+file_paths:
+  preprocessed: data/preprocessed
+  embedded: data/embedded
+  predicted: data/predicted
+schedule:
+  dataload:
+    - dmg777k
+    - amplus
+    - mdgenre
+    - dmgfull
+
+  augment:
+    - InAll
+    - ExAll
+
+    - InNumbers
+    # - InDates # only apply to amplus and mdgenre
+    - InText
+    - InImages
+    
+    - ExNumbers
+    # - ExDates # only apply to amplus and mdgenre
+    - ExText
+    - ExImages
+
+    - OneEntPerRel
+
+    - 5_bins
+    - 10_bins
+    - 100_bins
+
+    - 5_lof_bins
+    - 10_lof_bins
+    - 100_lof_bins
+
+    - 1_pct_bins
+    - 5_pct_bins
+    - 10_pct_bins
+
+    - 5_10_100_hierarchy
+    - 5lvl_binary_hierarchy
+
+    - 10_overlapping
+    - 100_overlapping
+
+    - propConst
+    - propConst_LOF
+    - propValConst
+    - propValConst_LOF
+
+    # - date_features # only apply to amplus and mdgenre
+    # - date_binning # only apply to amplus and mdgenre
+
+    - LDA_topics
+    - VGG_classes
+
+    - MKGA
+
+
+  embed:
+    - TransE
+    - DistMult
+    - RDF2Vec
+  iterations: 1
+

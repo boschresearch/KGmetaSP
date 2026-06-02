@@ -1,0 +1,62 @@
+RDF2Vec: 
+  embedding_name: Word2Vec
+  embedding_args:
+    workers: 1 # to ensure determinism
+    epochs: 50
+
+  walker_name: BFSRandomWalker
+  walker_args:
+    max_depth: 2 # change to 2
+    max_walks: 500
+    random_state: 42
+
+RDF2Vec2: 
+  embedding_name: Word2Vec
+  embedding_args:
+    workers: 4
+    epochs: 40
+  walker_name: RandomWalker
+  walker_args:
+    max_depth: 2
+    random_state: 42
+
+TransE:
+  optimizer: Adam 
+  train_loop_type: LCWA
+  train_loop_args:
+    num_epochs: 100
+    batch_size: 2000
+
+# TransE:
+#   optimizer: Adam 
+#   train_loop_type: LCWA
+#   train_loop_args:
+#     num_epochs: 100
+#     batch_size: 2000
+ComplEx:
+  optimizer: Adam 
+  train_loop_type: SLCWA
+  train_loop_args:
+    num_epochs: 200
+    batch_size: 262144
+DistMult:
+  optimizer: Adam 
+  train_loop_type: LCWA
+  train_loop_args:
+    num_epochs: 150
+    batch_size: 75000 
+RGCN:
+  optimizer: Adam 
+  train_loop_type: SLCWA
+  train_loop_args:
+    batch_size: 30000
+    gradient_clipping_max_norm: 1.0
+    num_epochs: 5
+    sampler: schlichtkrull
+
+SimplE:
+  optimizer: Adam 
+  train_loop_type: SLCWA
+  train_loop_args:
+    num_epochs: 200
+    batch_size: 16348 
