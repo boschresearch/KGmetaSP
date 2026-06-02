@@ -1,6 +1,6 @@
 # Knowledge Graph Embedding-Based Performance Prediction and Dataset Similarity
 
-This repository contains the codebase accompanying the paper [**Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning**](https://example.org/paper.pdf) by Klironomos A., Dasoulas I., Periti F., Gad-Elrab M., Paulheim H., Dimou A., Kharlamov E., accepted at ESWC 2026.
+This repository contains the codebase accompanying the paper [**Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning**]([https://example.org/paper.pdf](https://link.springer.com/chapter/10.1007/978-3-032-25156-5_18) by Klironomos A., Dasoulas I., Periti F., Gad-Elrab M., Paulheim H., Dimou A., Kharlamov E., accepted at ESWC 2026.
 
 ## Table of Contents
 
@@ -415,11 +415,29 @@ MIN_TRAIN_SAMPLES=1 SPLIT_MODE="pipeline" python kge_experiments/scripts/mlseakg
 If you use this code or our methods in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{klironomos2026integrating,
-  title={Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning},
-  author={Klironomos, Antonis and Dasoulas, Ioannis and Periti, Francesco and Gad-Elrab, Mohamed and Paulheim, Heiko and Dimou, Anastasia and Kharlamov, Evgeny},
-  booktitle={Extended Semantic Web Conference (ESWC)},
-  year={2026}
+@InProceedings{10.1007/978-3-032-25156-5_18,
+author="Klironomos, Antonis
+and Dasoulas, Ioannis
+and Periti, Francesco
+and Gad-Elrab, Mohamed H.
+and Paulheim, Heiko
+and Dimou, Anastasia
+and Kharlamov, Evgeny",
+editor="Acosta, Maribel
+and van Erp, Marieke
+and Rudolph, Sebastian
+and Hartig, Olaf
+and Spahiu, Blerina
+and Rula, Anisa
+and Garijo, Daniel
+and Osborne, Francesco",
+title="Integrating Meta-features with Knowledge Graph Embeddings for Meta-learning",
+booktitle="The Semantic Web",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="336--357",
+isbn="978-3-032-25156-5"
 }
 ```
 
