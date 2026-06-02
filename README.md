@@ -1,6 +1,6 @@
 # Knowledge Graph Embedding-Based Performance Prediction and Dataset Similarity
 
-This repository contains the codebase accompanying the paper [**Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning**]([https://example.org/paper.pdf](https://link.springer.com/chapter/10.1007/978-3-032-25156-5_18) by Klironomos A., Dasoulas I., Periti F., Gad-Elrab M., Paulheim H., Dimou A., Kharlamov E., accepted at ESWC 2026.
+This repository contains the codebase accompanying the paper [**Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning**](https://link.springer.com/chapter/10.1007/978-3-032-25156-5_18) by Klironomos A., Dasoulas I., Periti F., Gad-Elrab M., Paulheim H., Dimou A., Kharlamov E., accepted at ESWC 2026.
 
 ## Table of Contents
 
